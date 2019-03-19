@@ -10,4 +10,6 @@ server.get('/', (req, res) => {
   res.send(`<h2>API is working!</h2>`)
 });
 
+server.use('/api/posts', router);
+
 module.exports = server;
